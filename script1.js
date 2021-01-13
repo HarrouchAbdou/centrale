@@ -59,17 +59,22 @@ const handleSend = (file, algo) => {
         // stop animation depending on algo chosed
         switch (algo) {
             case 1:
-                icon1.className="fas fa-check-circle text-green-600"
+                icon1.className="far fa-check-circle text-green-100 text-xl "
+                btnAlgo1.className= "focus:outline-none px-8 py-3 border bg-green-600 border-gray-100 font-semi-bold text-gray-100 hover:bg-blue-600 hover:text-white"
+
     
                 
                 break;
                 case 2:
-                    icon2.className="fas fa-check-circle "
+                    icon2.className="far fa-check-circle text-green-500   "
+                    btnAlgo2.className= "focus:outline-none px-8 py-3 border bg-green-600 border-gray-100 font-semi-bold text-gray-100 hover:bg-blue-600 hover:text-white"
                     break;
     
         
             default:
-                icon3.className="fas fa-check-circle"
+                icon3.className="far fa-check-circle text-green-500"
+                btnAlgo3.className= "focus:outline-none px-8 py-3 border bg-green-600 border-gray-100 font-semi-bold text-gray-100 hover:bg-blue-600 hover:text-white"
+
     
                 break;
         }
