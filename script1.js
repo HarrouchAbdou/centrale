@@ -26,6 +26,7 @@ var icon3 = document.getElementById("icon3")
 const handleSend = (file, algo) => {
 
     const url_local = `http://localhost:5000/algo${algo}`;
+    const url_remote = `https://centraleapi.herokuapp.com/algo${algo}`;
     const formdata = new FormData();
     formdata.append('datafile',file)
 
@@ -49,7 +50,7 @@ const handleSend = (file, algo) => {
             break;
     }
   
-    fetch(url_local,{
+    fetch(url_remote,{
         method:"post",
         body:formdata
                     
